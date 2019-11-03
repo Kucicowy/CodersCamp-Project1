@@ -2,7 +2,8 @@
 
 :root {
 --main-bg-colour: #f1f1f1;
---sec-bg-colour: #e0e0e0;
+--sec-bg-colour: #FFFFFF;
+--third-bg-colour: #FAFAFF;
 --font-main-col: #787777;
 --font-sec-col: #ffa500;
 --font-3rd-col: #ffffff;
@@ -115,8 +116,9 @@ font-weight: 400;
 }
 #about-me{
     border-top: 10px;
-    background: #c7c7c7;
+    background:var(--third-bg-colour);
     font-weight: 400;
+    padding-bottom: 50px;
 }
 
 .about-me-container{
@@ -126,7 +128,7 @@ font-weight: 400;
     grid-template-rows: auto;
     padding: 10px;
     margin: 10px;
-    box-shadow: 10px 10px 8px lightgray;
+    box-shadow: 10px 5px 8px lightgray;
 }
 .about-me-item ul li{
     list-style: none;
@@ -148,6 +150,30 @@ font-weight: 400;
     border-color: orange;
 }
 
+#skills{
+    border-top: 10px;
+    background: var(--sec-bg-colour);
+    padding-bottom: 50px;
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 10px 5px 8px lightgray;
+}
+.skills-item{
+    text-align: center;
+    border-right: 4px dashed orange;
+    position: relative;
+}
+.skills-item:last-child{
+    border: unset;
+}
+.skills-item h2{
+    color: var(--font-sec-col);
+}
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
     h1 {
@@ -161,4 +187,6 @@ font-weight: 400;
     }
 }
 /* Desktop Styles */
-@media only screen and (min-width: 961px)
+@media only screen and (min-width: 961px){
+
+}
