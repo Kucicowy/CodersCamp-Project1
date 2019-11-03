@@ -30,6 +30,13 @@ font-weight: 400;
     max-width: 10vw;
 }
 
+.btn:hover{
+    border: 2px solid #FFC53D;
+    background: white;
+    color: black;
+    border-radius: 15px;
+}
+
 .navbar{
     background: var(--main-bg-colour);
     display: flex;
@@ -131,7 +138,6 @@ font-weight: 400;
     padding: 10px;
     margin: 10px auto;
     box-shadow: 10px 5px 8px lightgray;
-    max-width: 1200px;
 }
 
 .about-me-item ul li{
@@ -169,7 +175,6 @@ font-weight: 400;
     padding: 10px;
     margin: 10px auto;
     box-shadow: 10px 5px 8px lightgray;
-    max-width: 1200px;
 }
 
 .skills-item{
@@ -228,7 +233,6 @@ font-weight: 400;
 #contact-container{
     display: flex;
     flex-direction: row;
-    max-width: 1200px;
 }
 
 #contact-form{
@@ -282,6 +286,7 @@ font-weight: 400;
     margin: 5px;
     width: 50%;
 }
+
 @keyframes anim{
     0% {top: 0px;}
     50% {top: 20px;}
