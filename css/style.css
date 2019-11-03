@@ -116,7 +116,7 @@ font-weight: 400;
 }
 #about-me{
     border-top: 10px;
-    background:var(--third-bg-colour);
+    background:var(--sec-bg-colour);
     font-weight: 400;
     padding-bottom: 50px;
 }
@@ -127,7 +127,7 @@ font-weight: 400;
     grid-template-columns: 1fr 2fr 3fr;
     grid-template-rows: auto;
     padding: 10px;
-    margin: 10px;
+    margin: 10px auto;
     box-shadow: 10px 5px 8px lightgray;
 }
 
@@ -141,6 +141,7 @@ font-weight: 400;
     list-style: none;
     line-height: 3vh;
     text-align: justify;
+    font-weight: 700;
 }
 .about-me-item ul li span{
     color: orange;
@@ -148,8 +149,10 @@ font-weight: 400;
 .about-me-item img{
     padding: 10px;
     border-radius:  50%;
-    max-width: 70%;
+    max-width: 150px;
     height: auto;
+    margin: 0 auto;
+    display: block;
 }
 .about-me-item-desc{
     padding-left: 10px;
@@ -174,7 +177,7 @@ font-weight: 400;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     padding: 10px;
-    margin: 10px;
+    margin: 10px auto;
     box-shadow: 10px 5px 8px lightgray;
 }
 
@@ -202,18 +205,29 @@ font-weight: 400;
     }
 }
 
-.gallery-container{
+#gallery-container{
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 5px;
-    justify-content: flex-start;
+    border: 10px;
+    margin: 10px auto;
+    justify-content: center;
+}
+.gallery-item{
+    max-width: 33.3%;
+    padding: 2px;
+    object-fit: cover;
+    overflow: hidden;
 }
 .gallery-item img{
     width: 100%;
-    height: auto;
-    max-width: 20%;
+    height: 100%;
+    object-fit: cover;
 }
-.gallery-item{
-    position: relative;
+.gallery-item:hover{
+    opacity: 0.8;
+    filter: blur(2px);
+    transition: filter 0.3s ease-in;
 }

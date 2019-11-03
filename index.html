@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +22,7 @@
         <ul class="nav">
         <li><a href="#about-me">About me</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#gallery">Portfolio</a></li>
+            <li><a href="#gallery">Galerias</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -89,26 +88,41 @@
         <h2>Galeria</h2>
         <div id="gallery-container">
             <div class="gallery-item">
-                <img src="img/autumn1.jpg">
+                    <img src="img/autumn1.jpg">
             </div>
             <div class="gallery-item">
-                <img src="img/autumn2.jpg">
+                    <img src="img/autumn2.jpg">
             </div>
             <div class="gallery-item">
-                <img src="img/autumn3.jpg">
+                    <img src="img/autumn3.jpg">
             </div>
             <div class="gallery-item">
-                <img src="img/autumn4.jpg">  
+                    <img src="img/autumn4.jpg">
             </div>
             <div class="gallery-item">
-                <img src="img/autumn5.jpg">   
+                    <img src="img/autumn5.jpg">
             </div>
             <div class="gallery-item">
-                <img src="img/autumn6.jpg">
+                    <img src="img/autumn6.jpg">
             </div>
         </div>
     </div>
     <section id="contact" class="contact">
+            <div id="contact-container">
+                    <p id="contact-info">
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                            Vivamus ac blandit arcu. Suspendisse potenti. Integer nec rutrum est, sed consectetur massa.
+                            Phasellus sed venenatis mauris.
+                    </p>
+                    <form action="" method="POST" id="contact-form">
+                        <input class="contact-form-item" type="text" name="name" placeholder="Name">
+                        <input class="contact-form-item" type="text" name="email" placeholder="Email">
+                        <input class="contact-form-item" type="text" name="subject" placeholder="Subject">
+                        <textarea class="contact-form-item" name="message" rows="5" placeholder="Message"></textarea>
+                        <button class="contact-form-item" type="submit" form="contact-form" value="Submit">Send</button>
+                    </form>
+                </div>
         <button class="btn">Send</button>
     </div>
     <footer>Copyright&copy; 2019 Patryk N</footer>
