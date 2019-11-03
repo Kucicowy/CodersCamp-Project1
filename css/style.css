@@ -92,6 +92,7 @@ font-weight: 400;
     color: var(--font-3rd-col);
     font-size: 4vw;
     text-align: center;
+    animation: anim 5s;
 }
 .intro ul{
     position: relative;
@@ -130,6 +131,7 @@ font-weight: 400;
     padding: 10px;
     margin: 10px auto;
     box-shadow: 10px 5px 8px lightgray;
+    max-width: 1200px;
 }
 
 .about-me-item ul li{
@@ -167,6 +169,7 @@ font-weight: 400;
     padding: 10px;
     margin: 10px auto;
     box-shadow: 10px 5px 8px lightgray;
+    max-width: 1200px;
 }
 
 .skills-item{
@@ -219,10 +222,13 @@ font-weight: 400;
     flex-direction: row;
     box-shadow: 10px 5px 8px lightgray;
     padding: 20px;
+    margin: 10px auto;
+    justify-content: center;
 }
 #contact-container{
     display: flex;
     flex-direction: row;
+    max-width: 1200px;
 }
 
 #contact-form{
@@ -231,8 +237,8 @@ font-weight: 400;
     width: 60%;
     padding: 20px 40px;
 }
-#contact-form:last-child{
-    justify-content: end;
+#contact-form .btn{
+    align-items:flex-end;
 }
 #contact-info{
     background-color: var(--font-sec-col);
@@ -250,7 +256,7 @@ font-weight: 400;
     list-style: none;
 }
 #contact-info li{
-    font-size: 1vw;
+    font-size: 2vw;
     margin: 5px;
     border: 5px;
 }
@@ -276,9 +282,21 @@ font-weight: 400;
     margin: 5px;
     width: 50%;
 }
-
+@keyframes anim{
+    0% {top: 0px;}
+    50% {top: 20px;}
+    100% {top: 0px;}
+}
 
 @media(max-width: 768px) {
+    @keyframes anim{
+        0% {top: 0px;}
+        50% {top: 10px;}
+        100%{top: 0px;}
+    }
+    h2{
+        text-align: center;
+    }
     .about-me-container {
         grid-template-columns: 1fr;
     }
@@ -301,10 +319,14 @@ font-weight: 400;
     #contact-form{
         width: 100%;
     }
-    .btn{
-        max-width: 30px;
-    }
     .contact-form-item{
         width: 80%;
+    }
+    #contact-form .btn{
+        max-width: 30vw;
+        justify-content: center;
+    }
+    #contact-info ul li{
+        font-size: 20px;
     }
 }
