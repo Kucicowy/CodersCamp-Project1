@@ -217,7 +217,7 @@ font-weight: 400;
 #contact{
     display: flex;
     flex-direction: row;
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 10px 5px 8px lightgray;
     padding: 20px;
 }
 #contact-container{
@@ -229,6 +229,7 @@ font-weight: 400;
     display: flex;
     flex-direction: column;
     width: 60%;
+    padding: 20px 40px;
 }
 #contact-form:last-child{
     justify-content: end;
@@ -238,6 +239,28 @@ font-weight: 400;
     text-align: justify;
     padding: 10px;
     width: 40%;
+}
+#contact-info ul{
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+#contact-info li{
+    font-size: 1vw;
+    margin: 5px;
+    border: 5px;
+}
+#contact-info ul li a:link, a:visited{
+    text-decoration: none;
+    color: white;
+}
+#contact-info ul li a:hover,a:active{
+    text-decoration: none;
+    color: lightgrey;
 }
 #contact-info i{
     font-size: 200%;
@@ -268,5 +291,20 @@ font-weight: 400;
     }
     .skills-container {
         grid-template-columns: 1fr;
+    }
+    #contact-container {
+        flex-direction: column;
+    }
+    #contact-info {
+        width: 100%;
+    }
+    #contact-form{
+        width: 100%;
+    }
+    .btn{
+        max-width: 30px;
+    }
+    .contact-form-item{
+        width: 80%;
     }
 }
